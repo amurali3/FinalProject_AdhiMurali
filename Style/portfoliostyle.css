@@ -1,0 +1,496 @@
+/*
+Adhi Murali Final Project
+Portfolio Website
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/** Clear fix hack */*
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+h1:hover {
+  position: relative;
+  top: -10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+body {
+	text-align: left;
+	background: url("http://www.hdwallpapersact.com/wp-content/uploads/2013/09/dubai-beach.jpg");
+	background-position: center;
+	background-size: cover;
+	color: white;
+	background-repeat: no-repeat;
+	padding: 30px;
+	padding-right: 40px;
+  	font-size: 18px;
+  	line-height: 1.4;
+  	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  	font-weight: 300;
+	/*border: 5px solid;*/
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+	font-size: 25px;
+	font-family: inherit;
+}
+
+h2 {
+	font-size: 15px;
+}
+
+p {
+	color: black;
+}
+
+.skills {
+	color: white;
+}
+
+nav.intro {
+	border: 5px;
+	background-color: white;
+	background-position: left;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+	padding: 0;
+	font-family: inherit;
+/*	padding-right: 80px;
+	padding-left: 200px;*/
+}
+
+nav.f {
+	border: 5px;
+	background-color: white;
+}
+
+.img-circle {
+	border-radius: 50%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.mobile-menu {
+  show();
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+.mobile-menu {
+    display: visible;
+  margin-top: 15px;
+  float: right;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+
+.hamburger {
+  width: 50px;
+  height: 6px;
+  background-color: yellow;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #f0efef;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 800;
+  margin-right: 15px;
+}
+
+header {
+  background: #033048;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+
+header .logo {
+  color: #fff;
+  float: left;
+}
+
+header nav.desktop {
+  display: none;
+}
+
+header nav {
+  margin-top: 15px;
+  float: none;
+  text-align: center;
+}
+
+header nav ul li {
+  display: block;
+  font-size: 18px;
+}
+
+header nav ul li a {
+  display: block;
+  color: #f9e42e;
+}
+
+#hero {
+  height: 300px;
+  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
+  padding-top: 32px;
+  overflow: hidden;
+}
+
+#hero .logo {
+  color: #fff;
+}
+
+#hero h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  margin: 50px 0 50px;
+  font-weight: 600;
+}
+
+#benefits {
+  padding: 40px 0 40px;
+}
+
+h3 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+#benefits p, #benefits ul {
+  width: 100%;
+}
+
+#benefits ul {
+  list-style: disc;
+  margin: 20px 0 0 60px;
+}
+
+#testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+  padding: 50px 0 50px;
+  color: #fff;
+}
+
+blockquote {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+#posts {
+  width: 100%;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#sidebar {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.post {
+  border-bottom: 1px solid #043049;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+.post h2 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  margin-right: 15px;
+}
+
+.post h2 a {
+  color: #043049;
+  margin-right: 15px;
+}
+
+.post img {
+  margin-bottom: 30px;
+  margin-right: 15px;
+}
+
+.post p {
+  font-size: 18px;
+  line-height: 1.333;
+  color: #606161;
+  margin-right: 15px;
+}
+
+aside img {
+  display: none;
+}
+
+/*.post p:first-of-type:first-letter {
+  float: left;
+  font-size: 60px;
+  line-height: 65px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: 600;
+}*/
+
+.readmore {
+  text-align: right;
+  margin-top: 30px;
+}
+.readmore a {
+  color: #043049;
+  font-weight: 600;
+}
+
+/*.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 24px;
+}*/
+
+#sidebar h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #043049;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#sidebar ul {
+  margin-bottom: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#sidebar ul li a {
+  color: #043049;
+  font-size: 18px;
+}
+
+#sidebar p {
+  font-size: 18px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#sidebar p a {
+  color: #043049;
+  font-weight: 600;
+}
+
+section#posts img {
+  margin-right: 15px;
+  width: 100%;
+}
+
+#bottom-cta {
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center;
+}
+
+footer {
+  background: #121212;
+  padding: 45px 0 45px;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-bottom: 48px;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 75px;
+}
+footer p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+section.menu {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+
+}
+
+div.project {
+  background-color: white;
+  margin-top: 100px;
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10px;
+}
+
+div.two {
+  float: right;
+}
+
+div.three {
+  float: left;
+}
+
+div.project{
+  color: black;
+  font-size: 20px;
+}
+
+div.project ul li a{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: left;
+}
+
+body {
+	color: white;
+}
